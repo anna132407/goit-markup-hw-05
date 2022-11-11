@@ -422,6 +422,7 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--primary-white-color);
+    
 }
 
 .ex-item:nth-child(3n) {
@@ -447,6 +448,7 @@ img {
 }
 
 .u{
+    position: relative;
     overflow: hidden;
 }
 
@@ -484,6 +486,8 @@ background-color: rgba(33, 150, 243, 0.9);
     display: inline-block;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
 .ex-link:hover,
