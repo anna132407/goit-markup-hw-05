@@ -47,7 +47,7 @@
         <section class="hero section overlay">
             <div class="container heroo">
              <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-             <button type="button" class="hero-button">Замовити послугу</button>
+             <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
             </div>
         </section>
 
@@ -282,6 +282,14 @@
         </div>
     </div>
     </footer>
+
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+<div class="btn-modal-close"><button data-modal-close type="button" class="btn-modal">X</button></div>
+</div>
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>

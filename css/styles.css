@@ -209,7 +209,6 @@ body {
     text-align: center;
     color: var(--primary-white-color);
     border-radius: 4px;
-    text-align: center;
     min-width: 152px;
 
 }
@@ -648,4 +647,54 @@ gap: 70px;
 .footer-link:focus .team-svg{
     fill: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+
+.backdrop{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.1);
+   opacity: 1;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden{
+   opacity: 0;
+   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal{
+transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal{
+   min-width: 528px;
+   min-height: 581px;
+   border-radius: 4px;
+   background-color: var(--primary-white-color);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+
+}
+
+.btn-modal{
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   border: none;
+   font-weight: 700;
+   background-color: var(--primary-white-color);
+}
+
+.btn-modal-close{
+display: flex;
+justify-content: flex-end;
+margin-top: 8px;
+margin-right: 8px;
 }
